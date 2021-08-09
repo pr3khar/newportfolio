@@ -45,6 +45,21 @@ body {
     scroll-behavior: smooth;
 }
 
+.cursor{
+    width:3rem;
+    height:3rem;
+    border: 2px solid black;
+    border-radius:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.img-grow{
+    transform:scale(2); 
+    background: black ;
+}
+
 
 nav {
     height: 3.5rem;
@@ -59,7 +74,7 @@ nav {
 }
 
 .logo img {
-    height: 1.4rem;
+    height: 1.25rem;
 }
   
 nav ul {
@@ -90,9 +105,9 @@ nav li a:hover {
     font-size: 3rem;
     font-weight:600;
     line-height: 60px;
-    width:800px;
+    width:810px;
     color:var(--text);
-    margin-top:-5%;
+    margin-top:-2%;
 }
 
 .me-title{
@@ -101,7 +116,7 @@ nav li a:hover {
     position: fixed;
     margin-top:250px;
     z-index:-1;
-    margin-left:-10px;
+    margin-left:-7px;
     color: var(--theme-dark-grey);
     opacity: 9%;
     letter-spacing: -2px;
@@ -123,9 +138,9 @@ nav li a:hover {
 
 
 .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-top: 6%;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 10px;
     border-bottom: none;
@@ -151,14 +166,20 @@ nav li a:hover {
 }
 
 #right{
-    margin-top:100px;
     margin-left:600px;
 }
 
-#right .card-text{
-    margin-top: 126px;
+.img-container{
+    width:400px;
+    height:300px;
+    overflow:hidden;
 }
 
+.img-container-r{
+    width:400px;
+    height:auto;
+    overflow:hidden;
+}
 
 .card:hover,
 .card:focus {
@@ -170,54 +191,25 @@ nav li a:hover {
     width: 400px;
     border-radius: 3px;
 }
-  
-.image{
-    position:absolute;
-}
-  
+
 .card img {
     transition: transform 0.5s ease;
 }
   
 .card img:hover {
-    transform: scale(1.025);
+    transform: scale(1.1);
 }
 
-
-.img-container{
-    width:400px;
-    height:300px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.circle{
-    z-index: 9;
-    width:100px;
-    height:100px;
-    background-color: coral;
-    border-radius: 100%;
-    display:none;
-    transition: transform 0.5s ease;
-}
-  
-.img-container:hover .circle{
-    display: block;
-}
-  
 .card-title {
     width: 340px;
-    font-family: "Inter";
-    margin-top: 15px;
-    font-size: 1.7rem;
-    font-weight: 500;
+    margin-top: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
     margin-bottom: 2px;
     text-align: left;
 }
   
 .card-about {
-    font-family: Inter;
     font-weight: 400;
     font-size: 1.1rem;
     width: 450px;
@@ -267,15 +259,13 @@ nav li a:hover {
     
     #right img{
         width:350px;
-        margin-bottom:220px;
     }
     
     .card-title {
       width: 260px;
-      font-family: "Inter";
       margin-top: 15px;
       font-size: 1.7rem;
-      font-weight: 500;
+      font-weight: 700;
       margin-bottom: 2px;
       color: #eeeeee;
       text-align: left;
