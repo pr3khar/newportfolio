@@ -310,13 +310,14 @@ nav li a:hover {
 }
 
 #third-page li{
-    padding-top:11px;
+    padding-top:10px;
 }
 
 #third-page p{
     margin-left:700px;
     margin-top:150px;
     position: relative;
+    opacity:0.6;
 }
 
 @media only screen and (max-width: 1000px) {
