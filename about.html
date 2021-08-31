@@ -4,28 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logofinal.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="assets/css/about.css" />
   </head>
   <body>
     <nav>
-            <div class="logo">
-                <img src="./assets/img/logo.svg" onclick="location.href='index.html';"
-                style="cursor: pointer"/>
-            </div>
-            <div class = "nav-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-      </nav>
+      <div class="logo">
+          <img src="./assets/img/logo.svg"  onclick="location.href='index.html';"
+          style="cursor: pointer"/>
+      </div>
+      <div class = "nav-links">
+          <ul>
+              <li><a href="about.html">about</a></li>
+              <li><a href="index.html#second-page">work</a></li>
+          </ul>
+      </div>
+    </nav>  
+    <div class = "web-fit">
       <section id="about-page">
         <div class = "breadcrumb">
-          <a href = "index.html">home</a> / about
+          <a href = "index.html">home</a> &nbsp;/&nbsp; about
         </div>
         <div id="about">
-          <div id="about-pic">
-            <img src="assets/img/profile.png" id="my-photo" />
-          </div>
           <div id="about-text">
             Hi! I am Prakhar Prasad, a third-year undergraduate at IIIT Delhi,
             pursuing Bachelors of Technology in Computer Sciences with Social
@@ -41,12 +45,14 @@
             never fails to inspire me. On the sports front, Hala Madrid naya ya
             Mas!
           </div>
+          <div id="about-pic">
+            <img src="assets/img/photo.JPG" id="my-photo" />
+          </div>
         </div>
   
-        <div class="title">Experience</div>
-        <div id="exp-line"></div>
+        <div class="title">experience</div>
         <div id = "exp-table">
-          <div id = "exp-row">
+          <div class = "exp-row">
             <div id = "organisation">
               <div id = "logo">
                 <img src = "assets/img/ieee.png" id = "ieee">
@@ -65,7 +71,7 @@
               research opportunities.
             </div>
           </div>
-          <div id = "exp-row">
+          <div class = "exp-row">
             <div id = "organisation">
               <div id = "logo">
                 <img src = "assets/img/proctur.png" id = "proctur">
@@ -81,7 +87,7 @@
               and conducted user studies from their pool of clients.
             </div>
           </div>
-          <div id = "exp-row">
+          <div class = "exp-row">
             <div id = "organisation">
               <div id = "logo">
                 <img src = "assets/img/Elysium.png">
@@ -99,8 +105,7 @@
           </div>
         </div> 
   
-        <div class="title">Skills</div>
-        <div id="skill-line"></div>
+        <div class="title">skills</div>
         <div class = "skill-row">
           <div class = "skill-column">
             <div class = "skill-title">Domain</div>
@@ -145,5 +150,22 @@
         <div class = "back">
           <a href = "index.html">Back to Home</a>
         </div>
+        </section>
+      </div>
+      <section id = "third-page">
+        <div id = "contact">
+            <p>&#169; 2021 | Prakhar Prasad</p>
+          <ul class = "social-media">
+              <li><a href = "#">prakhar3009@gmail.com</a></li>
+              <li><a href = "#">behance</a></li>
+              <li><a href = "#">dribbble</a></li>
+              <li><a href = "#">github</a></li>
+              <li><a href = "#">medium</a></li>
+              <li><a href = "#">linkedIn</a></li>
+          </ul>
+        </div>
+    </section>
   </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src = "about.js"></script>
 </html>
