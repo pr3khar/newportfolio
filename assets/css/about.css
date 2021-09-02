@@ -223,9 +223,16 @@ nav li a:hover {
     border-radius:10px;
     border:2px solid var(--text-light-4);
   }
-  
+
+  #logo{
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #logo img {
-    width: 80px;
+    width: 120px;
   }
   
   #role {
@@ -258,10 +265,7 @@ nav li a:hover {
     color: var(--text);
     font-weight: 500;
   }
-  
-  #proctur {
-    width: 100px;
-  }
+
 
   @media only screen and (max-width: 1000px) {
     #exp-line{
